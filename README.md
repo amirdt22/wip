@@ -1,4 +1,4 @@
-wip
+Webapp Infrastructure Potpourri 
 ===
 
-Webapp Infrastructure Potpourri
+Presentation files for PLUG and drupaldelphia
