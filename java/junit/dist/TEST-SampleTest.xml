@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="amir-Lenovo-G550" name="SampleTest" tests="1" time="11.44" timestamp="2012-06-05T23:28:31">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="env.SESSION_MANAGER" value="local/amir-Lenovo-G550:@/tmp/.ICE-unix/1248,unix/amir-Lenovo-G550:/tmp/.ICE-unix/1248" />
+    <property name="env.LESSOPEN" value="| /usr/bin/lesspipe %s" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/netx.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/plugin.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/classes" />
+    <property name="env.PWD" value="/home/amir/wip/java" />
+    <property name="env.XDG_SESSION_COOKIE" value="dcb69ecf33a1f52e445910480000000a-1338923724.584941-316484941" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="java.runtime.version" value="1.6.0_24-b24" />
+    <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/ubuntu.default.path" />
+    <property name="env.DISPLAY" value=":0.0" />
+    <property name="user.name" value="amir" />
+    <property name="env._" value="/usr/bin/ant" />
+    <property name="env.USER" value="amir" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.DESKTOP_SESSION" value="ubuntu" />
+    <property name="env.XDG_DATA_DIRS" value="/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/" />
+    <property name="env.PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games" />
+    <property name="env.XDG_CURRENT_DESKTOP" value="Unity" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="demo" />
+    <property name="java.version" value="1.6.0_24" />
+    <property name="user.timezone" value="" />
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-0ZA4vQ0RTK,guid=8a352009969fd024990ca4e000000019" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="env.COMPIZ_CONFIG_PROFILE" value="ubuntu" />
+    <property name="env.SSH_AGENT_PID" value="1291" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="1" />
+    <property name="ECLIPSE_HOME" value="../../../../usr/lib/eclipse" />
+    <property name="file.separator" value="/" />
+    <property name="ant.file.demo" value="/home/amir/wip/java/build.xml" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated" />
+    <property name="java.class.version" value="50.0" />
+    <property name="env.GDMSESSION" value="ubuntu" />
+    <property name="ant.file.type.demo" value="file" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/usr/lib/jvm/java-6-openjdk-amd64/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="amir" />
+    <property name="ant.file" value="/home/amir/wip/java/build.xml" />
+    <property name="os.version" value="3.2.0-23-generic" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="20.0-b12" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="env.TERM" value="xterm" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="user.home" value="/home/amir" />
+    <property name="target" value="1.6" />
+    <property name="env.OLDPWD" value="/home/amir/wip" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.WINDOWID" value="58721108" />
+    <property name="java.library.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner SampleTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/amir/wip/java/junit/dist/TEST-SampleTest.xml crashfile=/home/amir/wip/java/junitvmwatcher5796845130706653976.properties propsfile=/home/amir/wip/java/junit3203166251824585644.properties" />
+    <property name="java.class.path" value="/home/amir/wip/java/bin:/home/amir/wip/java/lib/selenium-java-2.22.0.jar:/home/amir/wip/java/lib/apache-mime4j-0.6.jar:/home/amir/wip/java/lib/bsh-1.3.0.jar:/home/amir/wip/java/lib/cglib-nodep-2.1_3.jar:/home/amir/wip/java/lib/commons-codec-1.6.jar:/home/amir/wip/java/lib/commons-collections-3.2.1.jar:/home/amir/wip/java/lib/commons-exec-1.1.jar:/home/amir/wip/java/lib/commons-io-2.0.1.jar:/home/amir/wip/java/lib/commons-jxpath-1.3.jar:/home/amir/wip/java/lib/commons-lang-2.6.jar:/home/amir/wip/java/lib/commons-logging-1.1.1.jar:/home/amir/wip/java/lib/cssparser-0.9.5.jar:/home/amir/wip/java/lib/guava-12.0.jar:/home/amir/wip/java/lib/hamcrest-core-1.1.jar:/home/amir/wip/java/lib/hamcrest-library-1.1.jar:/home/amir/wip/java/lib/htmlunit-2.9.jar:/home/amir/wip/java/lib/htmlunit-core-js-2.9.jar:/home/amir/wip/java/lib/httpclient-4.1.3.jar:/home/amir/wip/java/lib/httpcore-4.1.3.jar:/home/amir/wip/java/lib/httpmime-4.1.3.jar:/home/amir/wip/java/lib/ini4j-0.5.2.jar:/home/amir/wip/java/lib/jcommander-1.13.jar:/home/amir/wip/java/lib/jna-3.4.0.jar:/home/amir/wip/java/lib/jna-platform-3.4.0.jar:/home/amir/wip/java/lib/json-20080701.jar:/home/amir/wip/java/lib/junit-dep-4.10.jar:/home/amir/wip/java/lib/nekohtml-1.9.15.jar:/home/amir/wip/java/lib/netty-3.2.7.Final.jar:/home/amir/wip/java/lib/operadriver-0.14.jar:/home/amir/wip/java/lib/protobuf-java-2.4.1.jar:/home/amir/wip/java/lib/sac-1.3.jar:/home/amir/wip/java/lib/serializer-2.7.1.jar:/home/amir/wip/java/lib/testng-6.0.1-nobsh-noguice.jar:/home/amir/wip/java/lib/webbit-0.4.8-SNAPSHOT.jar:/home/amir/wip/java/lib/xalan-2.7.1.jar:/home/amir/wip/java/lib/xercesImpl-2.9.1.jar:/home/amir/wip/java/lib/xml-apis-1.3.04.jar:/usr/share/ant/lib/junit.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="env.UBUNTU_MENUPROXY" value="libappmenu.so" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.HOME" value="/home/amir" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+    <property name="env.LD_LIBRARY_PATH" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64" />
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/keyring-3fV8kW/ssh" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="env.XAUTHORITY" value="/home/amir/.Xauthority" />
+    <property name="user.dir" value="/home/amir/wip/java" />
+    <property name="env.MANDATORY_PATH" value="/usr/share/gconf/ubuntu.mandatory.path" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="env.COLORTERM" value="gnome-terminal" />
+    <property name="basedir" value="/home/amir/wip/java" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="source" value="1.6" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.GPG_AGENT_INFO" value="/tmp/keyring-3fV8kW/gpg:0:1" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="env.GNOME_KEYRING_CONTROL" value="/tmp/keyring-3fV8kW" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu:/etc/xdg" />
+    <property name="env.LESSCLOSE" value="/usr/bin/lesspipe %s %s" />
+  </properties>
+  <testcase classname="SampleTest" name="testSample" time="11.207" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
