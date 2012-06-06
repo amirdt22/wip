@@ -17,32 +17,23 @@ For the overview see: http://mathforum.org/~amir/share/ip/
 
 ### Download or checkout
 
-<code>
-wget -O wip.zip https://github.com/amirdt22/wip/zipball/master
-
-unzip wip.zip
-
-cd amirdt22-wip-*
-</code>
+    wget -O wip.zip https://github.com/amirdt22/wip/zipball/master
+    unzip wip.zip
+    cd amirdt22-wip-*
 
 or
 
-<code>
-git clone https://github.com/amirdt22/wip.git
-
-cd wip
-</code>
+    git clone https://github.com/amirdt22/wip.git
+    cd wip 
 
 ### Initialize the database
 
-<code>
-cat sql/schema.sql | psql
-</code>
+    cat sql/schema.sql | psql
 
 ### Start Hudson
 
 set environment variable HUDSON_HOME to hudson/home
-<code>
-export HUDSON_HOME=hudson/home hudson/tomcat/bin/statup.sh
-</code>
+
+    export HUDSON_HOME=hudson/home hudson/tomcat/bin/statup.sh
+
 open http://localhost:4080/hudson/
