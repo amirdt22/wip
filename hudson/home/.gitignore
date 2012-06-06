@@ -3,3 +3,5 @@ jobs/*/builds
 jobs/*/lastStable
 jobs/*/lastSuccessful
 jobs/*/nextBuildNumber
+.owner
+users
