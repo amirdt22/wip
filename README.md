@@ -80,3 +80,4 @@ and all of the HardwareVirtEx enabled="true" to enabled="false".  Make sure your
 * more [puppet](https://github.com/puppetlabs/puppet)
 * [jmeter](http://jmeter.apache.org/)
 * [nagios](http://nagios.org)
+* fill in the links on html/index.html
