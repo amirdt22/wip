@@ -1,0 +1,215 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>reveal.js</title>
+
+		<meta name="description" content="An overview of tools for building, testing and maintaining webapps">
+		<meta name="author" content="Amir Tahvildaran">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+		<link rel="stylesheet" href="lib/zenburn.css">
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Webapp Infrastructure Potpourri</h1>
+				</section>
+				
+				<section>
+					<h2>Quick Overview</h2>
+					<ul>
+            <li>Selenium</li>
+            <li>Hudson</li>
+            <li>Liquibase</li>
+            <li>Vagrant</li>
+					</ul>
+        </section>
+        <section>
+          <section>
+            <h2>About Me</h2>
+					  <ul>
+              <li>developer</li>
+              <li>sysadmin</li>
+              <li>manager</li>
+            </ul>
+					  <p>
+					  	<i><small>- <a href="http://amirtinkering.com">Amir Tahvildaran</a> / <a href="http://twitter.com/amirdt22">@amirdt22</a></small></i>
+					  </p>
+				  </section>
+          <section>
+            <h2>About The Math Forum</h2>
+            <ul>
+              <li>millions of pages</li>
+              <li>millions of hits/day</li>
+              <li>millions of visitors/month</li>
+              <li>dozens of servers (99% linux)</li>
+              <li>lots of webapps (java, php, perl)</li>
+            </ul>
+          </section>
+				</section>
+				
+				
+				<section>
+				  <section>
+            <h2>Webapps</h2>
+              <ul>
+                <li>dynamic</li>
+                <li>developers make them</li>
+                <li>sysdamins (and DBAs) release them</li>
+                <li>customers use them</li>
+              </ul>
+				  </section>
+				  <section>
+            <h2>Problems with Webapps</h2>
+              <ul>
+                <li>buggy</li>
+                <li>poor performance</li>
+                <li>uptime</li>
+                <li>releasing</li>
+              </ul>
+				  </section>
+				  <section>
+            <h2>Consistency<small>The Dream</small></h2>
+            <ul>
+              <li>builds</li>
+              <li>environments (works for me)</li>
+              <li>processes (releasing)</li>
+              <li>versions</li>
+            </ul>
+          </section>
+				</section>
+
+				<section>
+          <h2>Silver Bullets?</h2>
+				</section>
+
+				<section>
+				  <section>
+            <h2>Source Control</h2>
+            <p>There are people that aren't using it!</p>
+				  </section>
+				  <section>
+            <h2>git</h2>
+				  </section>
+				  <section>
+            <h2>svn</h2>
+				  </section>
+				  <section>
+            <h2>etc...</h2>
+				  </section>
+				</section>
+
+				<section>
+          <h2>Selenium Demo</h2>
+        </section>
+
+				<section>
+          <h2>Hudson Demo</h2>
+        </section>
+
+				<section>
+          <h2>Liquibase Demo</h2>
+        </section>
+
+				<section>
+          <h2>Also see</h2>
+          <ul>
+            <li>vagrant</li>
+            <li>puppet</li>
+            <li>jmeter</li>
+            <li>nagios</li>
+          </ul>
+        </section>
+
+				<section>
+					<h1>THE END</h1>
+          <p>All of the files are over at github: <a href="https://github.com/amirdt22/wip">https://github.com/amirdt22/wip</a></p>
+				</section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+		<script src="lib/highlight.js"></script>
+		<script src="lib/classList.js"></script>
+		
+		<script src="js/reveal.js"></script>
+		
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			// Fires when a slide with data-state=customevent is activated
+			Reveal.addEventListener( 'customevent', function() {
+				alert( '"customevent" has fired' );
+			} );
+
+			// Fires each time a new slide is activated
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.indexh & event.indexv
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: true,
+
+				// Loops the presentation, defaults to false
+				loop: false,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+	</body>
+</html>
