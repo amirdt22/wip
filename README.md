@@ -34,6 +34,6 @@ or
 
 set environment variable HUDSON_HOME to hudson/home
 
-    export HUDSON_HOME=hudson/home hudson/tomcat/bin/statup.sh
+    export HUDSON_HOME=hudson/home hudson/tomcat/bin/startup.sh #also shutdown.sh
 
 open http://localhost:4080/hudson/
