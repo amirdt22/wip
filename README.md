@@ -19,7 +19,9 @@ For the overview see: http://mathforum.org/~amir/share/ip/
 
 <code>
 wget -O wip.zip https://github.com/amirdt22/wip/zipball/master
+
 unzip wip.zip
+
 cd amirdt22-wip-*
 </code>
 
@@ -27,6 +29,7 @@ or
 
 <code>
 git clone https://github.com/amirdt22/wip.git
+
 cd wip
 </code>
 
