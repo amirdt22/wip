@@ -1,5 +1,4 @@
-Webapp Infrastructure Potpourri 
-==
+# Webapp Infrastructure Potpourri 
 
 
 This project demonstrates the use of the following technologies:
@@ -9,24 +8,20 @@ This project demonstrates the use of the following technologies:
 
 http://mathforum.org/~amir/share/ip/
 
-Requirements
-===
+## Requirements
 * java (jre 1.6)
 * environment variable HUDSON_HOME set to hudson/home
 * postgres
 
-Getting Started
-===
+### Getting Started
 
-Initialize the database
-====
+#### Initialize the database
 
 <code>
 cat sql/schema.sql | psql
 </code>
 
-Start Hudson
-====
+#### Start Hudson
 
 <code>
 hudson/tomcat/bin/statup.sh #then visit http://localhost:4080/hudson/
