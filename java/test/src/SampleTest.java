@@ -41,7 +41,7 @@ public class SampleTest extends TestCase {
         driver.findElement(By.id("email")).clear();
         driver.findElement(By.id("email")).sendKeys("amirdt22@gmail.com");
         driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
-        assertTrue(driver.findElement(By.id("successMessag")).getText().contains("congrats"));
+        assertTrue(driver.findElement(By.id("successMessage")).getText().contains("congrats"));
 	}
 
 	@After
