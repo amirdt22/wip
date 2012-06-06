@@ -67,4 +67,7 @@ http://localhost:4080/hudson/job/demo/configure
 
 ## Next steps
 
-Set up and use [vagrant](http://vagrantup.com)
+* use [vagrant](http://vagrantup.com) to create a sample environment
+** with [puppet](https://github.com/puppetlabs/puppet)
+* [jmeter](http://jmeter.apache.org/)
+* [nagios](http://nagios.org)
