@@ -17,16 +17,31 @@ public class SampleTest extends TestCase {
 	@Before
 	public void setUp() throws Exception {
 		driver = new FirefoxDriver();
+		buildUrl();
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	}
+
+	private void buildUrl() {
 		baseUrl = "http://localhost/amir/";
 		String jobName = System.getenv("JOB_NAME");
 		String buildNumber = System.getenv("BUILD_NUMBER");
-		baseUrl += jobName + "-" + buildNumber;
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		if (jobName != null) { //we are dealing with hudson so let's run this job
+			baseUrl += jobName + "-" + buildNumber;
+		} else {
+			baseUrl += "latest";
+		}
 	}
 
 	@Test
 	public void testSample() throws Exception {
-		driver.get(baseUrl);
+		driver.get(baseUrl + "/test.html");
+        driver.findElement(By.id("testLink1")).click();
+        driver.findElement(By.id("name")).clear();
+        driver.findElement(By.id("name")).sendKeys("amir");
+        driver.findElement(By.id("email")).clear();
+        driver.findElement(By.id("email")).sendKeys("amirdt22@gmail.com");
+        driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
+        assertTrue(driver.findElement(By.id("successMessage")).getText().contains("congrats"));
 	}
 
 	@After
