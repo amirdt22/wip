@@ -10,19 +10,34 @@ http://mathforum.org/~amir/share/ip/
 
 ## Requirements
 * java (jre 1.6)
-* environment variable HUDSON_HOME set to hudson/home
 * postgres
+* firefox with selenium ide extension installed
 
-### Getting Started
+## Getting Started
 
-#### Initialize the database
+### Download or checkout
+
+<code>
+wget -O wip.zip https://github.com/amirdt22/wip/zipball/master
+unzip wip.zip
+cd amirdt22-wip-*
+</code>
+or
+<code>
+git clone https://github.com/amirdt22/wip.git
+cd wip
+</code>
+
+### Initialize the database
 
 <code>
 cat sql/schema.sql | psql
 </code>
 
-#### Start Hudson
+### Start Hudson
 
+set environment variable HUDSON_HOME to hudson/home
 <code>
-hudson/tomcat/bin/statup.sh #then visit http://localhost:4080/hudson/
+export HUDSON_HOME=hudson/home hudson/tomcat/bin/statup.sh
 </code>
+open http://localhost:4080/hudson/
