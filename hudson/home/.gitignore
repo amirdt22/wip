@@ -5,3 +5,4 @@ jobs/*/lastSuccessful
 jobs/*/nextBuildNumber
 .owner
 users
+queue.xml
