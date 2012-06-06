@@ -24,4 +24,22 @@ class apache {
   }
 }
 
+class java {
+  package { "openjdk-6-jre-headless":
+    ensure => present,
+  }
+}
+
+class postgresql {
+  package { "postgresql":
+    ensure => present,
+  }
+  service { "postgresql":
+    ensure => running,
+    require => Package["postgresql"],
+  }
+}
+
 include apache
+include java
+include postgresql
