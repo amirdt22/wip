@@ -99,7 +99,9 @@
         <antcall target="build"/>
     </target>
 
-    <target name="test" depends="build">
+    <target name="test" depends="run-tests,measure-tests"/>
+
+    <target name="run-tests" depends="build">
       <junit dir="${basedir}" fork="yes" printsummary="withOutAndErr" failureproperty="tests.failed">
         <formatter type="xml" />
         <batchtest todir="junit/dist">
@@ -110,5 +112,13 @@
         </batchtest>
         <classpath refid="demo.classpath" />
       </junit>
+    </target>
+
+    <target name="measure-tests">
+      <fail if="tests.failed">
+      TESTS FAILED!!!!!
+      TESTS FAILED!!!!!
+      TESTS FAILED!!!!!
+      </fail>
     </target>
 </project>

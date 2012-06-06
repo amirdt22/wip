@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="amir-Lenovo-G550" name="SampleTest" tests="1" time="11.44" timestamp="2012-06-05T23:28:31">
+<testsuite errors="1" failures="0" hostname="amir-Lenovo-G550" name="SampleTest" tests="1" time="10.745" timestamp="2012-06-06T00:50:32">
   <properties>
     <property name="java.vendor" value="Sun Microsystems Inc." />
     <property name="env.SESSION_MANAGER" value="local/amir-Lenovo-G550:@/tmp/.ICE-unix/1248,unix/amir-Lenovo-G550:/tmp/.ICE-unix/1248" />
@@ -23,7 +23,7 @@
     <property name="env.SHELL" value="/bin/bash" />
     <property name="env.DESKTOP_SESSION" value="ubuntu" />
     <property name="env.XDG_DATA_DIRS" value="/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/" />
-    <property name="env.PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games" />
+    <property name="env.PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/amir/wip/liquibase" />
     <property name="env.XDG_CURRENT_DESKTOP" value="Unity" />
     <property name="user.language" value="en" />
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64" />
@@ -68,30 +68,31 @@
     <property name="env.WINDOWID" value="58721108" />
     <property name="java.library.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
     <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="env.HUDSON_HOME" value="/home/amir/wip/hudson/home" />
     <property name="java.vm.vendor" value="Sun Microsystems Inc." />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner SampleTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/amir/wip/java/junit/dist/TEST-SampleTest.xml crashfile=/home/amir/wip/java/junitvmwatcher5796845130706653976.properties propsfile=/home/amir/wip/java/junit3203166251824585644.properties" />
     <property name="java.class.path" value="/home/amir/wip/java/bin:/home/amir/wip/java/lib/selenium-java-2.22.0.jar:/home/amir/wip/java/lib/apache-mime4j-0.6.jar:/home/amir/wip/java/lib/bsh-1.3.0.jar:/home/amir/wip/java/lib/cglib-nodep-2.1_3.jar:/home/amir/wip/java/lib/commons-codec-1.6.jar:/home/amir/wip/java/lib/commons-collections-3.2.1.jar:/home/amir/wip/java/lib/commons-exec-1.1.jar:/home/amir/wip/java/lib/commons-io-2.0.1.jar:/home/amir/wip/java/lib/commons-jxpath-1.3.jar:/home/amir/wip/java/lib/commons-lang-2.6.jar:/home/amir/wip/java/lib/commons-logging-1.1.1.jar:/home/amir/wip/java/lib/cssparser-0.9.5.jar:/home/amir/wip/java/lib/guava-12.0.jar:/home/amir/wip/java/lib/hamcrest-core-1.1.jar:/home/amir/wip/java/lib/hamcrest-library-1.1.jar:/home/amir/wip/java/lib/htmlunit-2.9.jar:/home/amir/wip/java/lib/htmlunit-core-js-2.9.jar:/home/amir/wip/java/lib/httpclient-4.1.3.jar:/home/amir/wip/java/lib/httpcore-4.1.3.jar:/home/amir/wip/java/lib/httpmime-4.1.3.jar:/home/amir/wip/java/lib/ini4j-0.5.2.jar:/home/amir/wip/java/lib/jcommander-1.13.jar:/home/amir/wip/java/lib/jna-3.4.0.jar:/home/amir/wip/java/lib/jna-platform-3.4.0.jar:/home/amir/wip/java/lib/json-20080701.jar:/home/amir/wip/java/lib/junit-dep-4.10.jar:/home/amir/wip/java/lib/nekohtml-1.9.15.jar:/home/amir/wip/java/lib/netty-3.2.7.Final.jar:/home/amir/wip/java/lib/operadriver-0.14.jar:/home/amir/wip/java/lib/protobuf-java-2.4.1.jar:/home/amir/wip/java/lib/sac-1.3.jar:/home/amir/wip/java/lib/serializer-2.7.1.jar:/home/amir/wip/java/lib/testng-6.0.1-nobsh-noguice.jar:/home/amir/wip/java/lib/webbit-0.4.8-SNAPSHOT.jar:/home/amir/wip/java/lib/xalan-2.7.1.jar:/home/amir/wip/java/lib/xercesImpl-2.9.1.jar:/home/amir/wip/java/lib/xml-apis-1.3.04.jar:/usr/share/ant/lib/junit.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner SampleTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/amir/wip/java/junit/dist/TEST-SampleTest.xml crashfile=/home/amir/wip/java/junitvmwatcher5800011738132422606.properties propsfile=/home/amir/wip/java/junit2631168540877849513.properties" />
     <property name="env.UBUNTU_MENUPROXY" value="libappmenu.so" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="ant.file.type" value="file" />
     <property name="java.vm.specification.version" value="1.0" />
-    <property name="sun.cpu.endian" value="little" />
     <property name="sun.os.patch.level" value="unknown" />
-    <property name="debuglevel" value="source,lines,vars" />
+    <property name="sun.cpu.endian" value="little" />
     <property name="env.HOME" value="/home/amir" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.LD_LIBRARY_PATH" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64" />
     <property name="java.io.tmpdir" value="/tmp" />
     <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
-    <property name="env.LD_LIBRARY_PATH" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64" />
     <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
     <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
     <property name="env.SSH_AUTH_SOCK" value="/tmp/keyring-3fV8kW/ssh" />
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
-    <property name="env.XAUTHORITY" value="/home/amir/.Xauthority" />
     <property name="user.dir" value="/home/amir/wip/java" />
+    <property name="env.XAUTHORITY" value="/home/amir/.Xauthority" />
     <property name="env.MANDATORY_PATH" value="/usr/share/gconf/ubuntu.mandatory.path" />
     <property name="line.separator" value="&#xa;" />
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
@@ -104,11 +105,35 @@
     <property name="env.GPG_AGENT_INFO" value="/tmp/keyring-3fV8kW/gpg:0:1" />
     <property name="java.specification.version" value="1.6" />
     <property name="env.GNOME_KEYRING_CONTROL" value="/tmp/keyring-3fV8kW" />
-    <property name="ant.project.invoked-targets" value="test" />
     <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu:/etc/xdg" />
+    <property name="ant.project.invoked-targets" value="test" />
     <property name="env.LESSCLOSE" value="/usr/bin/lesspipe %s %s" />
   </properties>
-  <testcase classname="SampleTest" name="testSample" time="11.207" />
+  <testcase classname="SampleTest" name="testSample" time="10.519">
+    <error message="Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;successMessag&quot;}&#xa;Command duration or timeout: 3.05 seconds&#xa;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#xa;Build info: version: &apos;2.22.0&apos;, revision: &apos;17049&apos;, time: &apos;2012-05-29 13:32:46&apos;&#xa;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.2.0-23-generic&apos;, java.version: &apos;1.6.0_24&apos;&#xa;Driver info: driver.version: RemoteWebDriver&#xa;Session ID: 2a990c28-4d0d-4030-8fca-1833eb02d71e" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;successMessag&quot;}
+Command duration or timeout: 3.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.22.0&apos;, revision: &apos;17049&apos;, time: &apos;2012-05-29 13:32:46&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.2.0-23-generic&apos;, java.version: &apos;1.6.0_24&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 2a990c28-4d0d-4030-8fca-1833eb02d71e
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:532)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:458)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:226)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:255)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:218)
+	at SampleTest.testSample(SampleTest.java:44)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;successMessag&quot;}
+Build info: version: &apos;2.22.0&apos;, revision: &apos;17049&apos;, time: &apos;2012-05-29 13:32:46&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.2.0-23-generic&apos;, java.version: &apos;1.6.0_24&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///tmp/anonymous8100584682632911194webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:6564)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///tmp/anonymous8100584682632911194webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:471)
+</error>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
