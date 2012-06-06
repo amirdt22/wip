@@ -22,7 +22,7 @@ public class SampleTest extends TestCase {
 	}
 
 	private void buildUrl() {
-		baseUrl = "http://localhost/amir/";
+		baseUrl = "http://localhost/demo/";
 		String jobName = System.getenv("JOB_NAME");
 		String buildNumber = System.getenv("BUILD_NUMBER");
 		if (jobName != null) { //we are dealing with hudson so let's run this job
