@@ -1,0 +1,74 @@
+<!--
+The MIT License
+
+Copyright (c) 2004-2009, Sun Microsystems, Inc., Kohsuke Kawaguchi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+-->
+
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:entry title="${%Remote locations}">
+    <f:repeatable var="loc" name="moduleLocations" items="${instance.moduleLocations}" noAddButton="true" minimum="1">
+      <table width="100%">
+        <f:entry title="${%Cvsroot}" field="cvsroot">
+          <f:textbox value="${loc.cvsroot}"/>
+        </f:entry>
+        <f:entry title="${%Modules}" field="module">
+          <f:textbox value="${loc.module}" />
+        </f:entry>
+        <f:entry title="${%Branch}" field="branch">
+          <f:textbox value="${loc.branch}" />
+            <div style="padding-left: 2em">
+              <f:checkbox name="loc.isTag" checked="${loc.isTag()}" />
+              <label class="attach-previous"> ${%This is a tag, not a branch}</label>
+            </div>
+        </f:entry>
+        <f:entry title="${%Local directory}" field="localDir">
+          <f:textbox value="${loc.localDir}" />
+        </f:entry>
+        <f:entry>
+          <div align="right">
+            <input type="button" value="${%Add more locations...}" class="repeatable-add show-if-last" />
+            <input type="button" value="${%Delete}" class="repeatable-delete show-if-not-only" style="margin-left: 1em;" />
+          </div>
+        </f:entry>
+      </table>
+    </f:repeatable>
+  </f:entry>
+
+  <f:advanced>
+    <f:entry title="CVS_RSH" field="cvsRsh">
+      <f:textbox />
+    </f:entry>
+    <f:entry title="${%Legacy mode}" field="legacy">
+      <f:checkbox />
+      ${%legacyModeDescription}
+    </f:entry>
+    <f:entry title="${%Use update}" field="canUseUpdate">
+      <f:checkbox default="true" />
+    </f:entry>
+    <t:listScmBrowsers name="cvs.browser" />
+    <f:entry title="${%Excluded Regions}" field="excludedRegions">
+	   <f:textarea />
+	 </f:entry>
+    <f:entry title="${%Prevent Line Ending Conversion}" field="preventLineEndingConversion">
+      <f:checkbox default="false" />
+    </f:entry>
+  </f:advanced>
+</j:jelly>

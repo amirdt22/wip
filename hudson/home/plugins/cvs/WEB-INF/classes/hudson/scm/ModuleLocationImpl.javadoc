@@ -1,0 +1,6 @@
+#Wed Oct 26 12:19:27 EEST 2011
+getLocalDir()=\ @inheritDoc\n
+isTag()=\ @inheritDoc\n
+getBranch()=\ @inheritDoc\n
+getCvsroot()=\ @inheritDoc\n
+getModule()=\ @inheritDoc\n

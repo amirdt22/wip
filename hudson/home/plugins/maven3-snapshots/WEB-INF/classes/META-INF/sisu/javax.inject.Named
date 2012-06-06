@@ -1,0 +1,6 @@
+org.hudsonci.plugins.snapshotmonitor.SnapshotTrigger$DescriptorImpl
+org.hudsonci.plugins.snapshotmonitor.SnapshotMonitorPlugin
+org.hudsonci.plugins.snapshotmonitor.internal.SnapshotMonitorModule
+org.hudsonci.plugins.snapshotmonitor.internal.SnapshotMonitorImpl
+org.hudsonci.plugins.snapshotmonitor.internal.WatchedDependenciesUpdater
+org.hudsonci.plugins.snapshotmonitor.WatchedDependenciesProperty$DescriptorImpl

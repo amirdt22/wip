@@ -1,0 +1,5 @@
+#Tue May 29 17:50:45 PDT 2012
+local=\ Remembers the user-given value.\n Can be null.\n\n @deprecated Code should use {@link \#getLocalDir()}. This field is only intended for form binding.\n
+remote=\ Subversion URL to check out.\n <p/>\n This may include "@NNN" at the end to indicate a fixed revision.\n
+ignoreExternalsOption=\ Flag to ignore subversion externals definitions.\n
+depthOption=\ Subversion remote depth. Used as "--depth" option for checkout and update commands.\n Default value is "infinity".\n

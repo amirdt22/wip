@@ -1,0 +1,5 @@
+jobs/*/workspace
+jobs/*/builds
+jobs/*/lastStable
+jobs/*/lastSuccessful
+jobs/*/nextBuildNumber

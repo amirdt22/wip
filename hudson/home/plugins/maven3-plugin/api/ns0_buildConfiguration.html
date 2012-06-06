@@ -1,0 +1,499 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>buildConfiguration</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/prettify.css">
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+
+</head>
+
+<body class="home">
+
+  <div class="container">
+    <header>
+      <div id="header" class="column first last span-20">
+        <div id="site-name" class="column span-18 append-1 prepend-1 first last"><a href="index.html">buildConfiguration</a></div>
+        <div id="primary" class="column span-18 append-1 prepend-1 first last">
+          <ul class="navigation">
+            <li id="nav-rest"><a href="rest.html">REST</a></li>
+            <li id="nav-data"><a href="model.html">Data Model</a></li>
+            <li id="nav-downloads"><a href="downloads.html">Files and Libraries</a></li>
+          </ul>
+        </div>
+        <div id="secondary" class="column span-18 append-1 prepend-1 first last">
+          <ul class="navigation">
+            <li><a href="index.html">Home</a> &gt;</li>
+            <li><a href="ns0.html">ns0</a> &gt;</li>
+            <li><a href="ns0_buildConfiguration.html">buildConfiguration</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="main" class="column first last span-20">
+      <h1>buildConfiguration</h1>
+      <table>
+        <tr>
+          <td align="right">Namespace:</td>
+          <td>http://hudson-ci.org/xsd/hudson/2.1.0/maven/config</td>
+        </tr>
+      </table>
+      <p>
+            <p>Java class for buildConfiguration complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+&lt;complexType name="buildConfiguration">
+&lt;complexContent>
+&lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+&lt;sequence>
+&lt;element name="installationId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+&lt;element name="goals" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+&lt;element name="privateRepository" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+&lt;element name="privateTmpdir" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+&lt;element name="pomFile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+&lt;element name="properties" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/common}properties" minOccurs="0"/>
+&lt;element name="errors" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+&lt;element name="verbosity" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/config}verbosity" minOccurs="0"/>
+&lt;element name="offline" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+&lt;element name="snapshotUpdateMode" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/config}snapshotUpdateMode" minOccurs="0"/>
+&lt;element name="profile" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
+&lt;element name="recursive" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+&lt;element name="checksumMode" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/config}checksumMode" minOccurs="0"/>
+&lt;element name="failMode" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/config}failMode" minOccurs="0"/>
+&lt;element name="makeMode" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/config}makeMode" minOccurs="0"/>
+&lt;element name="project" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
+&lt;element name="resumeFrom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+&lt;element name="threading" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+&lt;element name="mavenOpts" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+&lt;element name="settingsId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+&lt;element name="globalSettingsId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+&lt;element name="toolChainsId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+&lt;/sequence>
+&lt;/restriction>
+&lt;/complexContent>
+&lt;/complexType>
+</pre>
+          </p>
+
+      <h2>XML</h2>
+      <h3>Elements</h3>
+      <table>
+        <tr>
+          <th>name (type)</th>
+          <th>min/max<br/>occurs</th>
+          <th>description</th>
+        </tr>
+        <tr>
+          <td>
+            installationId (string)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            goals (string)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            privateRepository (boolean)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            privateTmpdir (boolean)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            pomFile (string)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            properties (<a href="ns1_properties.html">properties</a>)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            errors (boolean)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            verbosity (<a href="ns0_verbosity.html">verbosity</a>)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            offline (boolean)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            snapshotUpdateMode (<a href="ns0_snapshotUpdateMode.html">snapshotUpdateMode</a>)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            profile (string)
+          </td>
+          <td>0/unbounded</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            recursive (boolean)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            checksumMode (<a href="ns0_checksumMode.html">checksumMode</a>)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            failMode (<a href="ns0_failMode.html">failMode</a>)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            makeMode (<a href="ns0_makeMode.html">makeMode</a>)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            project (string)
+          </td>
+          <td>0/unbounded</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            resumeFrom (string)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            threading (string)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            mavenOpts (string)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            settingsId (string)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            globalSettingsId (string)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            toolChainsId (string)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+      </table>
+
+      <h2>JSON</h2>
+      <table>
+        <tr>
+          <th>property</th>
+          <th>type</th>
+          <th>description</th>
+        </tr>
+        <tr>
+          <td>installationId</td>
+          <td>
+            installationId (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>goals</td>
+          <td>
+            goals (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>privateRepository</td>
+          <td>
+            privateRepository (boolean)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>privateTmpdir</td>
+          <td>
+            privateTmpdir (boolean)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>pomFile</td>
+          <td>
+            pomFile (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>properties</td>
+          <td>
+            properties (<a href="ns1_properties.html">properties</a>)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>errors</td>
+          <td>
+            errors (boolean)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>verbosity</td>
+          <td>
+            verbosity (<a href="ns0_verbosity.html">verbosity</a>)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>offline</td>
+          <td>
+            offline (boolean)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>snapshotUpdateMode</td>
+          <td>
+            snapshotUpdateMode (<a href="ns0_snapshotUpdateMode.html">snapshotUpdateMode</a>)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>profile</td>
+          <td>
+            array of profile (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>recursive</td>
+          <td>
+            recursive (boolean)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>checksumMode</td>
+          <td>
+            checksumMode (<a href="ns0_checksumMode.html">checksumMode</a>)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>failMode</td>
+          <td>
+            failMode (<a href="ns0_failMode.html">failMode</a>)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>makeMode</td>
+          <td>
+            makeMode (<a href="ns0_makeMode.html">makeMode</a>)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>project</td>
+          <td>
+            array of project (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>resumeFrom</td>
+          <td>
+            resumeFrom (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>threading</td>
+          <td>
+            threading (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>mavenOpts</td>
+          <td>
+            mavenOpts (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>settingsId</td>
+          <td>
+            settingsId (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>globalSettingsId</td>
+          <td>
+            globalSettingsId (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>toolChainsId</td>
+          <td>
+            toolChainsId (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+
+      <div class="clear" />
+    </div>
+    <footer>
+      <div id="footer">
+        Copyright &copy; <script type="text/javascript" language="javascript">d = new Date;document.write(d.getFullYear());</script> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Sonatype, Inc.</span><br/>
+        Generated by <a href="http://enunciate.codehaus.org">Enunciate</a>.
+      </div>
+    </footer>
+  </div> <!--! end of #container -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="js/libs/prettify/prettify.js"></script>
+  <script>
+    $(function() {
+      prettyPrint();
+    });
+  </script>
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+</body>
+</html>

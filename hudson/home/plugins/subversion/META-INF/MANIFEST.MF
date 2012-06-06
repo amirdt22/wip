@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: winstonp
+Build-Jdk: 1.6.0_31
+Extension-Name: subversion
+Specification-Title: This plugin provides support to use Subversion as
+  an SCM in a Hudson job
+Specification-Vendor: Hudson
+Implementation-Vendor: Hudson
+Implementation-Title: subversion
+Implementation-Version: 2.3.2
+Group-Id: org.hudsonci.plugins
+Short-Name: subversion
+Long-Name: Hudson Subversion Plug-in
+Url: http://wiki.hudson-ci.org/display/HUDSON/Subversion+Plugin
+Plugin-Version: 2.3.2
+Hudson-Version: 2.2.0
+Plugin-Developers: Steven Christou:christ66:christ66@uwm.edu,Many:kohs
+ uke abayer dodok1 dty huybrechts mindless pgweiss stephenconnolly rse
+ guy wjprakash akozak 8nevil8 jjlauterbach:
+

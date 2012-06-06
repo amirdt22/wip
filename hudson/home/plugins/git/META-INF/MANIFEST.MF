@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: ant
+Build-Jdk: 1.6.0_29
+Extension-Name: git
+Specification-Title: Integrates Hudson with GIT SCM
+Specification-Vendor: Hudson
+Implementation-Vendor: Hudson
+Implementation-Title: git
+Implementation-Version: 2.2.0
+Plugin-Class: hudson.plugins.git.PluginImpl
+Group-Id: org.hudsonci.plugins
+Short-Name: git
+Long-Name: Hudson GIT plugin
+Url: http://wiki.hudson-ci.org/display/HUDSON/Git+Plugin
+Plugin-Version: 2.2.0
+Hudson-Version: 2.1.2
+Plugin-Dependencies: parameterized-trigger:2.4;resolution:=optional
+Plugin-Developers: Many:kohsuke abayer wjprakash antkozak 8nevil8:
+

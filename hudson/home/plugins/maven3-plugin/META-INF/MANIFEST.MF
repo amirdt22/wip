@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: mcculls
+Build-Jdk: 1.6.0_29
+Extension-Name: maven3-plugin
+Specification-Title: The module that constitutes the main hudson.war
+Specification-Vendor: Hudson
+Implementation-Vendor: Hudson
+Implementation-Title: maven3-plugin
+Implementation-Version: 2.2.0
+Plugin-Class: org.hudsonci.maven.plugin.MavenPlugin
+Group-Id: org.jvnet.hudson.main
+Short-Name: maven3-plugin
+Long-Name: Hudson :: Maven 3 :: Plugin
+Url: http://wiki.hudson-ci.org/display/HUDSON/Maven+3+Build+Plugin
+Plugin-Version: 2.2.0
+Hudson-Version: 2.2.0
+Plugin-Dependencies: rest-plugin:2.1.2
+Plugin-Developers: 
+

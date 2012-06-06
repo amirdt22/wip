@@ -1,0 +1,2 @@
+#Tue May 29 17:50:45 PDT 2012
+getLocations()=\ list of all configured svn locations\n\n @since 1.91\n

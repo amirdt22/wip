@@ -1,0 +1,11 @@
+org.hudsonci.rest.plugin.RestPluginModule
+org.hudsonci.rest.plugin.cometd.BuildEventPublisher
+org.hudsonci.rest.plugin.components.CoreComponents
+org.hudsonci.rest.plugin.jersey.JerseyProvider
+org.hudsonci.rest.plugin.jersey.JerseyProvider$ServletInstaller
+org.hudsonci.rest.plugin.components.HudsonComponents
+org.hudsonci.rest.plugin.cometd.CometdProvider
+org.hudsonci.rest.plugin.cometd.CometdProvider$ServletInstaller
+org.hudsonci.rest.plugin.RestPlugin
+org.hudsonci.rest.plugin.RestPlugin$ProviderEnabler
+org.hudsonci.rest.plugin.jersey.RestServletImpl

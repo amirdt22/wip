@@ -1,0 +1,367 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>buildState</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/prettify.css">
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+
+</head>
+
+<body class="home">
+
+  <div class="container">
+    <header>
+      <div id="header" class="column first last span-20">
+        <div id="site-name" class="column span-18 append-1 prepend-1 first last"><a href="index.html">buildState</a></div>
+        <div id="primary" class="column span-18 append-1 prepend-1 first last">
+          <ul class="navigation">
+            <li id="nav-rest"><a href="rest.html">REST</a></li>
+            <li id="nav-data"><a href="model.html">Data Model</a></li>
+            <li id="nav-downloads"><a href="downloads.html">Files and Libraries</a></li>
+          </ul>
+        </div>
+        <div id="secondary" class="column span-18 append-1 prepend-1 first last">
+          <ul class="navigation">
+            <li><a href="index.html">Home</a> &gt;</li>
+            <li><a href="ns2.html">ns2</a> &gt;</li>
+            <li><a href="el_ns2_buildState.html">Element buildState</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="main" class="column first last span-20">
+      <h1>Element buildState</h1>
+      <table>
+        <tr>
+          <td align="right">Type:</td>
+          <td><a href="ns2_buildState.html">buildState</a></td>
+        </tr>
+        <tr>
+          <td align="right">Namespace:</td>
+          <td>http://hudson-ci.org/xsd/hudson/2.1.0/maven/state</td>
+        </tr>
+      </table>
+      <p>
+            <p>Java class for buildState complex type.
+
+<p>The following schema fragment specifies the expected content contained within this class.
+
+<pre>
+&lt;complexType name="buildState">
+&lt;complexContent>
+&lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+&lt;sequence>
+&lt;element name="buildConfiguration" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/config}buildConfiguration"/>
+&lt;element name="executionActivity" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/state}executionActivity" maxOccurs="unbounded"/>
+&lt;element name="runtimeEnvironment" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/state}runtimeEnvironment"/>
+&lt;element name="participatingProject" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/state}mavenProject" maxOccurs="unbounded"/>
+&lt;element name="artifact" type="{http://hudson-ci.org/xsd/hudson/2.1.0/maven/state}artifact" maxOccurs="unbounded"/>
+&lt;/sequence>
+&lt;/restriction>
+&lt;/complexContent>
+&lt;/complexType>
+</pre>
+          </p>
+      <h2>Example XML</h2>
+      <code class="prettyprint lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;buildState xmlns=&quot;http://hudson-ci.org/xsd/hudson/2.1.0/maven/state&quot;&gt;
+  &lt;buildConfiguration xmlns=&quot;&quot;&gt;
+    &lt;installationId&gt;...&lt;/installationId&gt;
+    &lt;goals&gt;...&lt;/goals&gt;
+    &lt;privateRepository&gt;...&lt;/privateRepository&gt;
+    &lt;privateTmpdir&gt;...&lt;/privateTmpdir&gt;
+    &lt;pomFile&gt;...&lt;/pomFile&gt;
+    &lt;properties&gt;
+      &lt;entry name=&quot;...&quot; value=&quot;...&quot; /&gt;
+      &lt;entry name=&quot;...&quot; value=&quot;...&quot;&gt;
+        &lt;!--...--&gt;
+      &lt;/entry&gt;
+      &lt;!--...more &quot;entry&quot; elements...--&gt;
+    &lt;/properties&gt;
+    &lt;errors&gt;...&lt;/errors&gt;
+    &lt;verbosity&gt;...&lt;/verbosity&gt;
+    &lt;offline&gt;...&lt;/offline&gt;
+    &lt;snapshotUpdateMode&gt;...&lt;/snapshotUpdateMode&gt;
+    &lt;profile&gt;...&lt;/profile&gt;
+    &lt;profile&gt;...&lt;/profile&gt;
+    &lt;!--...more &quot;profile&quot; elements...--&gt;
+    &lt;recursive&gt;...&lt;/recursive&gt;
+    &lt;checksumMode&gt;...&lt;/checksumMode&gt;
+    &lt;failMode&gt;...&lt;/failMode&gt;
+    &lt;makeMode&gt;...&lt;/makeMode&gt;
+    &lt;project&gt;...&lt;/project&gt;
+    &lt;project&gt;...&lt;/project&gt;
+    &lt;!--...more &quot;project&quot; elements...--&gt;
+    &lt;resumeFrom&gt;...&lt;/resumeFrom&gt;
+    &lt;threading&gt;...&lt;/threading&gt;
+    &lt;mavenOpts&gt;...&lt;/mavenOpts&gt;
+    &lt;settingsId&gt;...&lt;/settingsId&gt;
+    &lt;globalSettingsId&gt;...&lt;/globalSettingsId&gt;
+    &lt;toolChainsId&gt;...&lt;/toolChainsId&gt;
+  &lt;/buildConfiguration&gt;
+  &lt;executionActivity xmlns=&quot;&quot; type=&quot;...&quot; timestamp=&quot;...&quot; /&gt;
+  &lt;executionActivity xmlns=&quot;&quot; type=&quot;...&quot; timestamp=&quot;...&quot;&gt;
+    &lt;!--...--&gt;
+  &lt;/executionActivity&gt;
+  &lt;!--...more &quot;executionActivity&quot; elements...--&gt;
+  &lt;runtimeEnvironment xmlns=&quot;&quot;&gt;
+    &lt;versionProperties&gt;
+      &lt;entry name=&quot;...&quot; value=&quot;...&quot; /&gt;
+      &lt;entry name=&quot;...&quot; value=&quot;...&quot;&gt;
+        &lt;!--...--&gt;
+      &lt;/entry&gt;
+      &lt;!--...more &quot;entry&quot; elements...--&gt;
+    &lt;/versionProperties&gt;
+    &lt;userProperties&gt;
+      &lt;entry name=&quot;...&quot; value=&quot;...&quot; /&gt;
+      &lt;entry name=&quot;...&quot; value=&quot;...&quot;&gt;
+        &lt;!--...--&gt;
+      &lt;/entry&gt;
+      &lt;!--...more &quot;entry&quot; elements...--&gt;
+    &lt;/userProperties&gt;
+    &lt;systemProperties&gt;
+      &lt;entry name=&quot;...&quot; value=&quot;...&quot; /&gt;
+      &lt;entry name=&quot;...&quot; value=&quot;...&quot;&gt;
+        &lt;!--...--&gt;
+      &lt;/entry&gt;
+      &lt;!--...more &quot;entry&quot; elements...--&gt;
+    &lt;/systemProperties&gt;
+    &lt;systemEnvironment&gt;
+      &lt;entry name=&quot;...&quot; value=&quot;...&quot; /&gt;
+      &lt;entry name=&quot;...&quot; value=&quot;...&quot;&gt;
+        &lt;!--...--&gt;
+      &lt;/entry&gt;
+      &lt;!--...more &quot;entry&quot; elements...--&gt;
+    &lt;/systemEnvironment&gt;
+    &lt;workingDirectory&gt;...&lt;/workingDirectory&gt;
+  &lt;/runtimeEnvironment&gt;
+  &lt;participatingProject xmlns=&quot;&quot; name=&quot;...&quot;&gt;
+    &lt;coordinates groupId=&quot;...&quot; artifactId=&quot;...&quot; version=&quot;...&quot; type=&quot;...&quot; classifier=&quot;...&quot; expandedMetaVersion=&quot;...&quot; /&gt;
+    &lt;profile&gt;
+      &lt;id&gt;...&lt;/id&gt;
+      &lt;source&gt;...&lt;/source&gt;
+      &lt;active&gt;...&lt;/active&gt;
+    &lt;/profile&gt;
+    &lt;profile&gt;
+      &lt;!--...--&gt;
+    &lt;/profile&gt;
+    &lt;!--...more &quot;profile&quot; elements...--&gt;
+    &lt;buildSummary result=&quot;...&quot; duration=&quot;...&quot;&gt;
+      &lt;failureCause type=&quot;...&quot;&gt;
+        &lt;message&gt;...&lt;/message&gt;
+        &lt;stackTrace&gt;
+          &lt;element type=&quot;...&quot; method=&quot;...&quot; file=&quot;...&quot; line=&quot;...&quot; /&gt;
+          &lt;element type=&quot;...&quot; method=&quot;...&quot; file=&quot;...&quot; line=&quot;...&quot;&gt;
+            &lt;!--...--&gt;
+          &lt;/element&gt;
+          &lt;!--...more &quot;element&quot; elements...--&gt;
+        &lt;/stackTrace&gt;
+        &lt;cause&gt;
+          &lt;!--...--&gt;
+        &lt;/cause&gt;
+      &lt;/failureCause&gt;
+    &lt;/buildSummary&gt;
+  &lt;/participatingProject&gt;
+  &lt;participatingProject xmlns=&quot;&quot; name=&quot;...&quot;&gt;
+    &lt;!--...--&gt;
+  &lt;/participatingProject&gt;
+  &lt;!--...more &quot;participatingProject&quot; elements...--&gt;
+  &lt;artifact xmlns=&quot;&quot; createdProject=&quot;...&quot;&gt;
+    &lt;coordinates groupId=&quot;...&quot; artifactId=&quot;...&quot; version=&quot;...&quot; type=&quot;...&quot; classifier=&quot;...&quot; expandedMetaVersion=&quot;...&quot; /&gt;
+    &lt;type&gt;...&lt;/type&gt;
+    &lt;action projectId=&quot;...&quot; operation=&quot;...&quot; /&gt;
+    &lt;action projectId=&quot;...&quot; operation=&quot;...&quot;&gt;
+      &lt;!--...--&gt;
+    &lt;/action&gt;
+    &lt;!--...more &quot;action&quot; elements...--&gt;
+    &lt;repositoryFile&gt;...&lt;/repositoryFile&gt;
+    &lt;dependentProject&gt;...&lt;/dependentProject&gt;
+    &lt;dependentProject&gt;...&lt;/dependentProject&gt;
+    &lt;!--...more &quot;dependentProject&quot; elements...--&gt;
+    &lt;consumingProject&gt;...&lt;/consumingProject&gt;
+    &lt;consumingProject&gt;...&lt;/consumingProject&gt;
+    &lt;!--...more &quot;consumingProject&quot; elements...--&gt;
+    &lt;archivedFile&gt;...&lt;/archivedFile&gt;
+  &lt;/artifact&gt;
+  &lt;artifact xmlns=&quot;&quot; createdProject=&quot;...&quot;&gt;
+    &lt;!--...--&gt;
+  &lt;/artifact&gt;
+  &lt;!--...more &quot;artifact&quot; elements...--&gt;
+&lt;/buildState&gt;</code>
+      <h2>Example JSON</h2>
+      <code class="prettyprint lang-js">{
+  buildConfiguration : {
+    installationId : &quot;...&quot;,
+    goals : &quot;...&quot;,
+    privateRepository : false,
+    privateTmpdir : false,
+    pomFile : &quot;...&quot;,
+    properties : {
+      entry : [ {
+        name : &quot;...&quot;,
+        value : &quot;...&quot;
+      }, ... ]
+    },
+    errors : false,
+    verbosity : {
+    },
+    offline : false,
+    snapshotUpdateMode : {
+    },
+    profile : [ &quot;...&quot;, ... ],
+    recursive : false,
+    checksumMode : {
+    },
+    failMode : {
+    },
+    makeMode : {
+    },
+    project : [ &quot;...&quot;, ... ],
+    resumeFrom : &quot;...&quot;,
+    threading : &quot;...&quot;,
+    mavenOpts : &quot;...&quot;,
+    settingsId : &quot;...&quot;,
+    globalSettingsId : &quot;...&quot;,
+    toolChainsId : &quot;...&quot;
+  },
+  executionActivity : [ {
+    type : {
+    },
+    timestamp : &quot;...&quot;
+  }, ... ],
+  runtimeEnvironment : {
+    versionProperties : {
+      entry : [ {
+        name : &quot;...&quot;,
+        value : &quot;...&quot;
+      }, ... ]
+    },
+    userProperties : {
+      entry : [ {
+        name : &quot;...&quot;,
+        value : &quot;...&quot;
+      }, ... ]
+    },
+    systemProperties : {
+      entry : [ {
+        name : &quot;...&quot;,
+        value : &quot;...&quot;
+      }, ... ]
+    },
+    systemEnvironment : {
+      entry : [ {
+        name : &quot;...&quot;,
+        value : &quot;...&quot;
+      }, ... ]
+    },
+    workingDirectory : &quot;...&quot;
+  },
+  participatingProject : [ {
+    name : &quot;...&quot;,
+    coordinates : {
+      groupId : &quot;...&quot;,
+      artifactId : &quot;...&quot;,
+      version : &quot;...&quot;,
+      type : &quot;...&quot;,
+      classifier : &quot;...&quot;,
+      expandedMetaVersion : &quot;...&quot;
+    },
+    profile : [ {
+      id : &quot;...&quot;,
+      source : &quot;...&quot;,
+      active : false
+    }, ... ],
+    buildSummary : {
+      result : {
+      },
+      duration : ...,
+      failureCause : {
+        type : &quot;...&quot;,
+        message : &quot;...&quot;,
+        stackTrace : {
+          element : [ {
+            type : &quot;...&quot;,
+            method : &quot;...&quot;,
+            file : &quot;...&quot;,
+            line : ...
+          }, ... ]
+        },
+        cause : {
+          ... : ...
+        }
+      }
+    }
+  }, ... ],
+  artifact : [ {
+    createdProject : &quot;...&quot;,
+    coordinates : {
+      groupId : &quot;...&quot;,
+      artifactId : &quot;...&quot;,
+      version : &quot;...&quot;,
+      type : &quot;...&quot;,
+      classifier : &quot;...&quot;,
+      expandedMetaVersion : &quot;...&quot;
+    },
+    type : &quot;...&quot;,
+    action : [ {
+      projectId : &quot;...&quot;,
+      operation : {
+      }
+    }, ... ],
+    repositoryFile : &quot;...&quot;,
+    dependentProject : [ &quot;...&quot;, ... ],
+    consumingProject : [ &quot;...&quot;, ... ],
+    archivedFile : &quot;...&quot;
+  }, ... ]
+}</code>
+
+      <div class="clear" />
+    </div>
+    <footer>
+      <div id="footer">
+        Copyright &copy; <script type="text/javascript" language="javascript">d = new Date;document.write(d.getFullYear());</script> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Sonatype, Inc.</span><br/>
+        Generated by <a href="http://enunciate.codehaus.org">Enunciate</a>.
+      </div>
+    </footer>
+  </div> <!--! end of #container -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+
+
+  <!-- prettify code blocks. see http://code.google.com/p/google-code-prettify/ -->
+  <script src="js/libs/prettify/prettify.js"></script>
+  <script>
+    $(function() {
+      prettyPrint();
+    });
+  </script>
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+</body>
+</html>
