@@ -22,6 +22,7 @@ For the overview see: http://mathforum.org/~amir/share/ip/
 
 * ant
 * eclipse
+* [vagrant](http://vagrantup.com)
 
 ### included
 
@@ -65,9 +66,17 @@ open http://localhost:4080/hudson/
 make any necessary environment changes (Build -> Execute shell - consider apache path from above)
 http://localhost:4080/hudson/job/demo/configure
 
+### Prep vagrant
+
+ vagrant box add base http://files.vagrantup.com/lucid32.box
+
+If your host OS doesn't have vt-x you will need to edit the vbox xml file changing:
+ cpu count="2" to cpu count="1"
+and all of the HardwareVirtEx enabled="true" to enabled="false".  Make sure your changes stick (virtualbox needs to be off when you make these changes otherwise it will overwrite them).
+
 ## Next steps
 
-* use [vagrant](http://vagrantup.com) to create a sample environment
-** with [puppet](https://github.com/puppetlabs/puppet)
+* get vagrant files running in VM (currently just mounted at /vagrant)
+* more [puppet](https://github.com/puppetlabs/puppet)
 * [jmeter](http://jmeter.apache.org/)
 * [nagios](http://nagios.org)
