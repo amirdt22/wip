@@ -3,8 +3,12 @@
 
 This project demonstrates the use of the following technologies:
 * [liquibase](http://www.liquibase.org)
+** helps to manage your database changes
 * [selenium](http://www.seleniumhq.org)
+** automated browser testing
 * [hudson](http://hudson-ci.org)
+** continuous integration - build and test your projects consistently
+
 
 For the overview see: http://mathforum.org/~amir/share/ip/
 
@@ -12,10 +16,26 @@ For the overview see: http://mathforum.org/~amir/share/ip/
 * java (jre 1.6)
 * postgres
 * firefox with selenium ide extension installed
+* apache 
+
+### optional
+
+* ant
+* eclipse
+
+### included
+
+* hudson 2.2.1
+* liquibase 2.0.5
+* [selenium webdriver java 2.22.0 and dependencies](http://seleniumhq.org/download/)
+* [tomcat 7.0](http://tomcat.apache.org/download-70.cgi)
+* [junit](http://www.junit.org/)
+* [postgres-9.1 jdbc4 driver](http://jdbc.postgresql.org/download.html)
+* [twitter bootstrap](http://twitter.github.com/bootstrap/)
 
 ## Getting Started
 
-### Download or checkout
+### Download/checkout/fork
 
     wget -O wip.zip https://github.com/amirdt22/wip/zipball/master
     unzip wip.zip
@@ -30,6 +50,10 @@ or
 
     cat sql/schema.sql | psql
 
+### apache
+
+Set apache up with a directory that hudson can copy files into
+
 ### Start Hudson
 
 set environment variable HUDSON_HOME to hudson/home
@@ -37,3 +61,10 @@ set environment variable HUDSON_HOME to hudson/home
     export HUDSON_HOME=hudson/home hudson/tomcat/bin/startup.sh #also shutdown.sh
 
 open http://localhost:4080/hudson/
+
+make any necessary environment changes (Build -> Execute shell - consider apache path from above)
+http://localhost:4080/hudson/job/demo/configure
+
+## Next steps
+
+Set up and use [vagrant](http://vagrantup.com)
