@@ -8,7 +8,7 @@ This project demonstrates the use of the following technologies:
 ** continuous integration - build and test your projects consistently
 * [nagios](http://nagios.org)
 ** monitoring hosts and services
-* [puppet]( http://en.wikipedia.org/wiki/Puppet_(software) )
+* [puppet]( http://en.wikipedia.org/wiki/Puppet_&#41;software&#42; )
 ** provisioner and configuration management
 * [vagrant](http://vagrantup.com)
 ** VM setup for developers
