@@ -47,11 +47,20 @@
           <section>
             <h2>About Me</h2>
 					  <ul>
-              <li>developer</li>
+              <li>developer
+                <ul>
+                  <li>java</li>
+                  <li>php</li>
+                </ul>
+              </li>
               <li>sysadmin</li>
-              <li>manager</li>
+                <ul>
+                  <li>CentOS</li>
+                  <li>Ubuntu</li>
+                </ul>
             </ul>
 					  <p>
+            at The Math Forum @ Drexel
 					  	<i><small>- <a href="http://amirtinkering.com">Amir Tahvildaran</a> / <a href="http://twitter.com/amirdt22">@amirdt22</a></small></i>
 					  </p>
 				  </section>
@@ -119,24 +128,209 @@
 				</section>
 
 				<section>
-          <h2>Selenium Demo</h2>
+				  <section>
+            <h2>Selenium</h2>
+            <p>Browser automation tool, useful for testing.  Record and playback clicks and data entry.</p>
+				  </section>
+				  <section>
+            <h2>Selenium</h2>
+            <p>"IDE" is a firefox plugin which can save out to the language of your choice.</p>
+          </section>
+				  <section>
+            <h2>HTML</h2>
+            <ul>
+              <li>open [url]</li>
+              <li>clickAndWait [selector]</li>
+              <li>type [selector] [value]</li>
+              <li>verifyTextPresent [value]</li>
+            </ul>
+          </section>
+				  <section>
+            <h2>Selenium Demo</h2>
+            <ul>
+              <li>HTML</li>
+              <li>Java</li>
+            </ul>
+          </section>
+				  <section>
+            <h2>Selenium Drivers</h2>
+            <ul>
+              <li>RC or WebDriver</li>
+              <li>FirefoxDriver</li>
+              <li>InternetExplorerDriver</li>
+              <li>HtmlUnitDriver</li>
+              <li>and...</li>
+              <li>iOS and Android drivers</li>
+            </ul>
+          </section>
         </section>
 
 				<section>
-          <h2>Hudson Demo</h2>
+				  <section>
+            <h2>Hudson</h2>
+            <p>is a continuous integration (CI) server.</p>
+          </section>
+				  <section>
+            <h2>What is and Why Continuous Integration?</h2>
+            <ul>
+              <li>validate the repository</li>
+              <li>automation: build</li>
+              <li>automation: tests</li>
+            </ul>
+          </section>
+				  <section>
+            <h2>Hudson Demo</h2>
+          </section>
         </section>
 
 				<section>
-          <h2>Liquibase Demo</h2>
+				  <section>
+            <h2>Nagios</h2>
+            <p>is a system and service monitoring tool.</p>
+          </section>
+				  <section>
+            <h2>Nagios</h2>
+            <ul>
+              <li>alerts you of problems</li>
+              <li>warns you of upcoming problems</li>
+              <li>helps you pinpoint the actual problem</li>
+            </ul>
+          </section>
+				  <section>
+            <h2>Nagios</h2>
+            <ul>
+              <li>dependencies</li>
+              <li>schedules</li>
+              <li>acknowledgements</li>
+              <li>check_mysql/check_postgres (bucardo)</li>
+            </ul>
+          </section>
+				  <section>
+            <h2>Nagios</h2>
+          <pre>
+            <code>
+define host{
+  use        mathforum-server,vm-server
+  host_name  rhenium
+  alias      rhenium.mathforum.org
+  address    144.118.94.126
+}
+            </code>
+            </pre>
+          </section>
+				  <section>
+            <h2>Nagios</h2>
+          <pre>
+            <code>
+define service{
+  use                     mathforum-service
+  service_description     mathforum-drmath
+  host_name               mathforum
+  check_command           check_http!-H $HOSTALIAS$ -u /dr.math/
+}
+            </code>
+            </pre>
+          </section>
+				  <section>
+            <h2>Nagios</h2>
+          <pre>
+            <code>
+define service {
+  use                     base-database
+  service_description     database-disk-space
+  notifications_enabled   1
+  hostgroup_name          postgres-servers
+  check_command           check_postgres_by_ssh!disk_space
+}
+            </code>
+            </pre>
+          </section>
+          <section>
+            <img src="nagios_tac.png"/>
+          </section>
+          <section>
+            <img src="nagios_services.png"/>
+          </section>
+          <section>
+            <h2>Nagios tips</h2>
+            <ul>
+              <li>minimize alerts (dependencies, schedules, etc)</li>
+              <li>whenever something breaks, add a nagios check for it</li>
+              <li>checks
+                <ul>
+                  <li>DNS: valid</li>
+                  <li>DNS: expiry</li>
+                  <li>SSL: expiry</li>
+                  <li>time (ntp)</li>
+                  <li>ssh, disk, load</li>
+                  <li>database (use plugins)</li>
+                  <li>web - check all important URLs</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+				</section>
+
+				<section>
+				  <section>
+            <h2>Puppet</h2>
+            <p>is a provisioning/configuration management tool.</p>
+          </section>
+				  <section>
+            <h2>Puppet</h2>
+            <ul>
+              <li>declarative</li>
+              <li>multi-platform: EL, debian, etc, (even windows...)</li>
+              <li>client/server OR standalone</li>
+            </ul>
+          </section>
+				  <section>
+            <h2>Puppet Example</h2>
+            <pre><code>
+file {"/etc/motd":
+  content => "hi there",
+}
+
+group {"drupal":
+  ensure => "present",
+}
+            </code></pre>
+          </section>
+				  <section>
+            <h2>Puppet Example</h2>
+            <pre><code>
+package { "apache2":
+  ensure => present,
+}
+
+service { "apache2":
+  ensure  => running,
+  require => Package["apache2"],
+}
+
+file { "php.conf":
+  path    => "${apache::params::vdir}php.conf",
+  content => template("php.conf.erb"),
+}
+            </code></pre>
+          </section>
+				  <section>
+            <h2>Puppet Example</h2>
+            <pre><code>
+&lt;%# php.conf.erb %&gt;
+DirectoryIndex index.php
+&lt;VirtualHost &lt;%= vhost_name %&gt;:&lt;%= port %&gt; &gt;
+  ...
+&lt;/VirtualHost&gt;
+            </code></pre>
+          </section>
         </section>
 
 				<section>
           <h2>Also see</h2>
           <ul>
-            <li>vagrant</li>
-            <li>puppet</li>
+            <li>liquibase</li>
             <li>jmeter</li>
-            <li>nagios</li>
           </ul>
         </section>
 
