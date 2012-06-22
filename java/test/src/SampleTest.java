@@ -54,6 +54,15 @@ public class SampleTest extends TestCase {
         driver.findElement(By.id("name")).sendKeys("amir");
 	}
 
+	@Test
+	public void testIframe() throws Exception {
+		driver.get(baseUrl + "/windows.html");
+        driver.switchTo().frame("hiframe");
+        driver.findElement(By.id("name")).sendKeys("amir");
+        driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
+        assertTrue(driver.findElement(By.id("successMessage")).getText().contains("congrats"));
+	}
+
 	@After
 	public void tearDown() throws Exception {
 		driver.quit();
