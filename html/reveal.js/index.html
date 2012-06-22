@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		
-		<title>reveal.js</title>
+		<title>WIP</title>
 
 		<meta name="description" content="An overview of tools for building, testing and maintaining webapps">
 		<meta name="author" content="Amir Tahvildaran">
@@ -31,7 +31,12 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Webapp Infrastructure Potpourri</h1>
+				  <section>
+				  	<h1>Webapp Infrastructure Potpourri</h1>
+				  </section>
+				  <section>
+            <img src="../wipqr.png"/>
+				  </section>
 				</section>
 				
 				<section>
@@ -360,6 +365,21 @@ file { "php.conf":
 				  <section>
             <h2>Puppet Example</h2>
             <pre><code>
+exec { "setup-drupal":
+  command => "drush dl drupal-7.14",
+  creates => "/usr/local/apache2/htdocs/drupal-7.14",
+  cwd     => "/usr/local/apache2/htdocs",
+  require => Package["drush"],
+}
+
+Exec {
+  path => [ "/bin/", "/sbin/", "/usr/bin/", "/usr/sbin/", "/usr/local/bin/" ]
+} 
+            </code></pre>
+          </section>
+				  <section>
+            <h2>Puppet Example</h2>
+            <pre><code>
 &lt;%# php.conf.erb %&gt;
 DirectoryIndex index.php
 &lt;VirtualHost &lt;%= vhost_name %&gt;:&lt;%= port %&gt; &gt;
@@ -379,7 +399,11 @@ facter #lists all
           </section>
           <section>
             <h2>Modules</h2>
-            <p>Collections of resources, templates, files can be built into modules.</p>
+            <p>Collections of resources can be built into classes.</p>
+          </section>
+          <section>
+            <h2>Modules</h2>
+            <p>Collections of classes, templates, files can be built into modules.</p>
             <p>Modules can be used internally or shared (and downloaded from puppet forge)</p>
             <pre><code>
 puppet module search apache
@@ -450,6 +474,9 @@ vagrant ssh
               <li>being reactive by catching bugs early (regressions) and monitoring with nagios</li>
               <li>wasting time, yes</li>
             </ul>
+          </section>
+          <section>
+					  <h2>Questions and Discussion</h2>
           </section>
           <section>
 					  <h1>THE END</h1>
