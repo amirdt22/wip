@@ -365,6 +365,16 @@ file { "php.conf":
 				  <section>
             <h2>Puppet Example</h2>
             <pre><code>
+&lt;%# php.conf.erb %&gt;
+DirectoryIndex index.php
+&lt;VirtualHost &lt;%= vhost_name %&gt;:&lt;%= port %&gt; &gt;
+  ...
+&lt;/VirtualHost&gt;
+            </code></pre>
+          </section>
+				  <section>
+            <h2>Puppet Example</h2>
+            <pre><code>
 exec { "setup-drupal":
   command => "drush dl drupal-7.14",
   creates => "/usr/local/apache2/htdocs/drupal-7.14",
@@ -380,16 +390,6 @@ Exec {
 				  <section>
             <h2>Puppet Example</h2>
             <pre><code>
-&lt;%# php.conf.erb %&gt;
-DirectoryIndex index.php
-&lt;VirtualHost &lt;%= vhost_name %&gt;:&lt;%= port %&gt; &gt;
-  ...
-&lt;/VirtualHost&gt;
-            </code></pre>
-          </section>
-				  <section>
-            <h2>Puppet Example</h2>
-            <pre><code>
 puppet apply base.pp
 puppet --configprint all
 facter hostname
@@ -398,7 +398,7 @@ facter #lists all
             </code></pre>
           </section>
           <section>
-            <h2>Modules</h2>
+            <h2>Classes</h2>
             <p>Collections of resources can be built into classes.</p>
           </section>
           <section>
