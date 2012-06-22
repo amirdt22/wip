@@ -39,7 +39,8 @@
 					<ul>
             <li>Selenium</li>
             <li>Hudson</li>
-            <li>Liquibase</li>
+            <li>Nagios</li>
+            <li>Puppet</li>
             <li>Vagrant</li>
 					</ul>
         </section>
@@ -47,20 +48,10 @@
           <section>
             <h2>About Me</h2>
 					  <ul>
-              <li>developer
-                <ul>
-                  <li>java</li>
-                  <li>php</li>
-                </ul>
-              </li>
+              <li>developer</li>
               <li>sysadmin</li>
-                <ul>
-                  <li>CentOS</li>
-                  <li>Ubuntu</li>
-                </ul>
             </ul>
 					  <p>
-            at The Math Forum @ Drexel
 					  	<i><small>- <a href="http://amirtinkering.com">Amir Tahvildaran</a> / <a href="http://twitter.com/amirdt22">@amirdt22</a></small></i>
 					  </p>
 				  </section>
@@ -79,30 +70,29 @@
 				
 				<section>
 				  <section>
-            <h2>Webapps</h2>
+            <h2>The Cycle</h2>
               <ul>
-                <li>dynamic</li>
-                <li>developers make them</li>
-                <li>sysdamins (and DBAs) release them</li>
-                <li>customers use them</li>
+                <li>code a little</li>
+                <li>test a little</li>
+                <li>commit to source control</li>
+                <li>release changes</li>
               </ul>
 				  </section>
 				  <section>
-            <h2>Problems with Webapps</h2>
+            <h2>At some point</h2>
               <ul>
-                <li>buggy</li>
-                <li>poor performance</li>
-                <li>uptime</li>
-                <li>releasing</li>
+                <li>something that was working will break</li>
+                <li>a new developer will come onboard</li>
+                <li>servers will crash</li>
               </ul>
 				  </section>
 				  <section>
-            <h2>Consistency<small>The Dream</small></h2>
+            <h2>We want to avoid</h2>
             <ul>
-              <li>builds</li>
-              <li>environments (works for me)</li>
-              <li>processes (releasing)</li>
-              <li>versions</li>
+              <li>regressions</li>
+              <li>"works for me"</li>
+              <li>being reactive</li>
+              <li>wasting time</li>
             </ul>
           </section>
 				</section>
@@ -115,16 +105,47 @@
 				  <section>
             <h2>Source Control</h2>
             <p>There are people that aren't using it!</p>
+            <ul>
+              <li>git</li>
+              <li>svn</li>
+              <li>who cares, just use something </li>
+            </ul>
+            <p>
+            <small>(email and zip files don't count!)</small>
+            </p>
 				  </section>
+				  <section>
+            <h2>Super Basics</h2>
+            <ul>
+              <li>checkout</li>
+              <li>make your changes</li>
+              <li>pull in changes</li>
+              <li>merge and commit your changes</li>
+            </ul>
+				  </section>
+				  <section>
+            <h2>SVN</h2>
+            <pre><code>
+svn checkout svn+ssh://svn.mathforum.org/someproject
+cd someproject
+vi index.html
+svn status
+svn update
+svn commit -m "I did it!"
+            </code></pre>
+          </section>
 				  <section>
             <h2>git</h2>
-				  </section>
-				  <section>
-            <h2>svn</h2>
-				  </section>
-				  <section>
-            <h2>etc...</h2>
-				  </section>
+            <pre><code>
+git clone https://github.com/amirdt22/wip.git
+cd wip
+vi README.md
+git status
+git add README.md
+git commit
+git push
+            </code></pre>
+          </section>
 				</section>
 
 				<section>
@@ -134,7 +155,7 @@
 				  </section>
 				  <section>
             <h2>Selenium</h2>
-            <p>"IDE" is a firefox plugin which can save out to the language of your choice.</p>
+            <p>"IDE" is a firefox plugin which can save to a bunch of different languages.</p>
           </section>
 				  <section>
             <h2>HTML</h2>
@@ -144,6 +165,14 @@
               <li>type [selector] [value]</li>
               <li>verifyTextPresent [value]</li>
             </ul>
+          </section>
+				  <section>
+            <h2>Java</h2>
+            <pre><code>
+driver.findElement(By.id("testLink1")).click();
+driver.findElement(By.id("name")).sendKeys("amir");
+assertTrue(driver.findElement(By.id("successMessage")).getText().contains("congrats"));
+            </code></pre>
           </section>
 				  <section>
             <h2>Selenium Demo</h2>
@@ -161,6 +190,14 @@
               <li>HtmlUnitDriver</li>
               <li>and...</li>
               <li>iOS and Android drivers</li>
+            </ul>
+          </section>
+				  <section>
+            <h2>Alternatives</h2>
+            <ul>
+              <li>CasperJS</li>
+              <li>Jmeter ~</li>
+              <li>not testing :-(</li>
             </ul>
           </section>
         </section>
@@ -181,6 +218,13 @@
 				  <section>
             <h2>Hudson Demo</h2>
           </section>
+				  <section>
+            <h2>Alternatives</h2>
+            <ul>
+              <li>Jenkins</li>
+              <li>CruiseControl</li>
+            </ul>
+          </section>
         </section>
 
 				<section>
@@ -197,16 +241,7 @@
             </ul>
           </section>
 				  <section>
-            <h2>Nagios</h2>
-            <ul>
-              <li>dependencies</li>
-              <li>schedules</li>
-              <li>acknowledgements</li>
-              <li>check_mysql/check_postgres (bucardo)</li>
-            </ul>
-          </section>
-				  <section>
-            <h2>Nagios</h2>
+            <h2>Nagios Example</h2>
           <pre>
             <code>
 define host{
@@ -219,7 +254,7 @@ define host{
             </pre>
           </section>
 				  <section>
-            <h2>Nagios</h2>
+            <h2>Nagios Example</h2>
           <pre>
             <code>
 define service{
@@ -232,7 +267,7 @@ define service{
             </pre>
           </section>
 				  <section>
-            <h2>Nagios</h2>
+            <h2>Nagios Example</h2>
           <pre>
             <code>
 define service {
@@ -254,9 +289,9 @@ define service {
           <section>
             <h2>Nagios tips</h2>
             <ul>
-              <li>minimize alerts (dependencies, schedules, etc)</li>
+              <li>minimize alerts (dependencies, schedules, acknowledgements)</li>
               <li>whenever something breaks, add a nagios check for it</li>
-              <li>checks
+              <li>handy checks
                 <ul>
                   <li>DNS: valid</li>
                   <li>DNS: expiry</li>
@@ -267,6 +302,13 @@ define service {
                   <li>web - check all important URLs</li>
                 </ul>
               </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Nagios Alternatives</h2>
+            <ul>
+              <li>Icinga</li>
+              <li>spong</li>
             </ul>
           </section>
 				</section>
@@ -280,8 +322,10 @@ define service {
             <h2>Puppet</h2>
             <ul>
               <li>declarative</li>
+              <li>idempotent</li>
               <li>multi-platform: EL, debian, etc, (even windows...)</li>
               <li>client/server OR standalone</li>
+              <li>built on top of facter</li>
             </ul>
           </section>
 				  <section>
@@ -324,19 +368,94 @@ DirectoryIndex index.php
 &lt;/VirtualHost&gt;
             </code></pre>
           </section>
+				  <section>
+            <h2>Puppet Example</h2>
+            <pre><code>
+puppet apply base.pp
+puppet --configprint all
+facter hostname
+facter is_virtual
+facter #lists all
+            </code></pre>
+          </section>
+          <section>
+            <h2>Modules</h2>
+            <p>Collections of resources, templates, files can be built into modules.</p>
+            <p>Modules can be used internally or shared (and downloaded from puppet forge)</p>
+            <pre><code>
+puppet module search apache
+puppet module install puppetlabs-apache
+            </code></pre>
+          </section>
+          <section>
+            <h2>Related Projects</h2>
+            <ul>
+              <li>Puppet Dashboard</li>
+              <li>Puppet Forge</li>
+              <li>Puppet Enterprise</li>
+              <li>MCollective</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Alternatives</h2>
+            <ul>
+              <li>Chef</li>
+              <li>Cfengine</li>
+              <li>Capistrano</li>
+            </ul>
+          </section>
         </section>
 
 				<section>
-          <h2>Also see</h2>
-          <ul>
-            <li>liquibase</li>
-            <li>jmeter</li>
-          </ul>
+				  <section>
+            <h2>Vagrant</h2>
+            <p>is a tool that creates and provisions development virtual machines</p>
+          </section>
+				  <section>
+            <h2>Vagrant Uses</h2>
+            <ul>
+              <li>virtualbox</li>
+              <li>Puppet or Chef</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Getting started</h2>
+            <pre><code>
+vagrant box add base http://files.vagrantup.com/lucid32.box
+cd project
+vagrant init
+vagrant up
+vagrant ssh
+            </code></pre>
+          </section>
+          <section>
+            <h2>What happens</h2>
+            <ul>
+              <li>virtualbox vm is created or started</li>
+              <li>ports are forwarded (2222 -> 22, 8080 -> 80)</li>
+              <li>provisioner runs to set up the box</li>
+              <li>files from the project are mounted at /vagrant</li>
+            </ul>
+          </section>
         </section>
 
 				<section>
-					<h1>THE END</h1>
-          <p>All of the files are over at github: <a href="https://github.com/amirdt22/wip">https://github.com/amirdt22/wip</a></p>
+          <section>
+					  <h2>Conclusion</h2>
+          </section>
+				  <section>
+            <h2>We avoid</h2>
+            <ul>
+              <li>regressions by testing with Selenium and running tests frequently with Hudson</li>
+              <li>"works for me" by building consistently with Hudson and provisioning with Puppet and Vagrant</li>
+              <li>being reactive by catching bugs early (regressions) and monitoring with nagios</li>
+              <li>wasting time, yes</li>
+            </ul>
+          </section>
+          <section>
+					  <h1>THE END</h1>
+            <p>All of the files are over at github: <a href="https://github.com/amirdt22/wip">https://github.com/amirdt22/wip</a></p>
+				  </section>
 				</section>
 			</div>
 
