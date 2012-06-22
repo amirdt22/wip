@@ -1,3 +1,4 @@
+http://www.liquibase.org/
 
  sudo su - postgres
  createuser -W vagrant #password vagrant

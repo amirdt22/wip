@@ -77,5 +77,7 @@ and all of the HardwareVirtEx enabled="true" to enabled="false".  Make sure your
 ## Next steps
 
 * get vagrant files running in VM (currently just mounted at /vagrant)
+** postgres initialization (vagrant:vagrant:vagrant)
+** rest of services...
 * more [nagios](http://nagios.org)
 * [jmeter](http://jmeter.apache.org/)
