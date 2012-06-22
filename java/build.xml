@@ -102,6 +102,8 @@
     <target name="test" depends="run-tests,measure-tests"/>
 
     <target name="run-tests" depends="build">
+      <mkdir dir="junit"/>
+      <mkdir dir="junit/dist"/>
       <junit dir="${basedir}" fork="yes" printsummary="withOutAndErr" failureproperty="tests.failed">
         <formatter type="xml" />
         <batchtest todir="junit/dist">
