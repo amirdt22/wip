@@ -44,6 +44,16 @@ public class SampleTest extends TestCase {
         assertTrue(driver.findElement(By.id("successMessage")).getText().contains("congrats"));
 	}
 
+	@Test
+	public void testMultiWindow() throws Exception {
+		driver.get(baseUrl + "/windows.html");
+        System.out.println(driver.getWindowHandles());
+        driver.findElement(By.id("newwin")).click();
+        System.out.println(driver.getWindowHandles());
+        driver.switchTo().window("newwin");
+        driver.findElement(By.id("name")).sendKeys("amir");
+	}
+
 	@After
 	public void tearDown() throws Exception {
 		driver.quit();
