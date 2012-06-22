@@ -2,15 +2,22 @@
 
 
 This project demonstrates the use of the following technologies:
-* [liquibase](http://www.liquibase.org)
-** helps to manage your database changes
 * [selenium](http://www.seleniumhq.org)
 ** automated browser testing
 * [hudson](http://hudson-ci.org)
 ** continuous integration - build and test your projects consistently
-
+* [nagios](http://nagios.org)
+** monitoring hosts and services
+* [puppet](http://en.wikipedia.org/wiki/Puppet_(software))
+** provisioner and configuration management
+* [vagrant](http://vagrantup.com)
+** VM setup for developers
+* [liquibase](http://www.liquibase.org)
+** helps to manage your database changes
 
 For the overview see: http://mathforum.org/~amir/share/ip/
+
+For the slides see: http://mathforum.org/~amir/share/ip/reveal.js/
 
 ## Requirements
 * java (jre 1.6)
